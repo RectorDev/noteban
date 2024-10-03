@@ -1,6 +1,10 @@
 const Form = () => {
+  function handleForm(event) {
+    event.target.preventDefault();
+    event.target.reset();
+  }
   return (
-    <Form onclick>
+    <Form onSubmit={handleForm}>
       <label htmlFor="todo">
         <input
           type="text"
