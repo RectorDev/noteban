@@ -94,8 +94,9 @@ body {
 
 @layer utilities {
     .padding {
-        @apply sm:px-16 px-8 sm:py-24 py-12;
+        @apply sm:px-14 px-6 sm:py-16 py-6;
     }
+
     .padding-sm {
         @apply px-4 sm:px-8 py-8 sm:py-12;
     }
@@ -126,5 +127,11 @@ body {
 
     .info-text {
         @apply font-montserrat text-slate-gray text-lg leading-7;
+    }
+
+    .pos-center {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
