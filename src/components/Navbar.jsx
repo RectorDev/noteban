@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (<div  className={'max-container padding-x py-4 max-sm:py-6 flex flex-1 justify-between border-b border-border items-center'}>
         <div className={'text-2xl font-press text-primary'}><Link href="/"> Brain Rot</Link></div>
-        <div className={'font-roboto font-bold '}>
+        <div className={'font-roboto font-bold max-md:hidden'}>
             <ul className={"flex gap-2 "}>
 
                 <li><NavMenu/></li>

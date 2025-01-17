@@ -2,6 +2,7 @@ import {Roboto, Press_Start_2P, Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import SideNav from "@/components/SideNav";
 
 
 const roboto = Roboto({
@@ -33,11 +34,15 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body
-            className={`
+            className={` background
            ${roboto.variable} ${geistSans.variable} ${geistMono.variable} ${pressStart.variable} antialiased`}
 
         >
-        <Navbar  />
+
+        <header>
+            <SideNav/>
+            <Navbar/>
+        </header>
         <main>
             {children}</main>
         <footer><Footer/></footer>
