@@ -2,10 +2,11 @@
 import './page.css'
 import {Typewriter} from 'react-simple-typewriter'
 import {Button} from "@/components/ui/button";
-import {MailOpen, Quote} from "lucide-react";
+import {ArrowRight, MailOpen, Quote} from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
     return (<div className="mx-auto my-0 max-w-screen-xl mt-10 padding justify-center flex flex-col ">
@@ -20,7 +21,7 @@ export default function Home() {
                         loop={true} cursor={true}/></span></h1>
                     <p className={'font-roboto my-10  font-[400]'}>I craft responsive Websites where technologies meet
                         creativity</p>
-                    <Button className={"bg-primary"}><MailOpen/>Contact me</Button>
+                    <Button variant={"outline"}><MailOpen/>Contact me</Button>
 
                 </div>
 
@@ -39,6 +40,27 @@ export default function Home() {
                 </div>
                 <div className={"border-border self-end border font-roboto text-xl p-2"}>Mr.Yakarim</div>
             </div>
+        </section>
+        <section id={"projects"}>
+            <div>
+
+                <div className={"flex justify-between items-center w-full"}>
+
+                    <div className={"font-press text-2xl flex items-center"}># <h2> projects</h2>
+                        <div className={"h-[1px] ml-1 flex-shrink-0 w-1/4 md:px-44 bg-amber-500"}/>
+                    </div>
+
+
+                    <div className={"flex border-b-2 border-border"}>View all <ArrowRight/></div>
+                </div>
+                <div className={"flex mt-8 sm:mt-16 justify-center gap-10  xl:justify-between flex-wrap "}>
+                    <ProjectCard/>
+                    <ProjectCard/>
+                    <ProjectCard/>
+                </div>
+
+            </div>
+
         </section>
     </div>);
 }
