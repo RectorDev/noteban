@@ -27,6 +27,9 @@ const Footer = () => {
                 href={""}>    Rector</Link></span> was here.
             </div>
 
+
+
+
         </div>
     )
 }
