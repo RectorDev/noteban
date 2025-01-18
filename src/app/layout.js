@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import SideNav from "@/components/SideNav";
+import './page.css'
 
 
 const roboto = Roboto({

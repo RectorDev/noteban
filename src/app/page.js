@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import SkillCard from "@/components/SkillCard";
-import Discord from '@/../public/discord.svg'
+import Discord from "@/../public/discord.svg";
 export default function Home() {
   return (
     <div className="mx-auto my-0 max-w-screen-xl mt-10 padding justify-center flex flex-col ">
@@ -122,8 +122,9 @@ export default function Home() {
             </div>
           </div>
           {/* {picture side} */}
-          <div className="w-1/2 flex justify-center">
+          <div className="w-1/2 flex relative justify-center">
             <Image className="object-cover aspect-[9/16]" src={"/elie.jpg"} height={350} width={250} alt="Picture of man" />
+            <div className="absolute pos-center bottom-0 w-full h-[2px] bg-amber-500" />
           </div>
         </div>
       </section>
@@ -138,8 +139,13 @@ export default function Home() {
           <div className="w-1/2">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</div>
           <div className="absolute bottom-0 right-0 border border-border flex flex-col gap-4 p-2 ">
             <p>Message me here</p>
-            <div className="flex gap-2 text-zinc-700"><Mail /> rector.dev@gmail.com</div>
-            <div className="flex gap-2 text-zinc-700"><Image src={Discord} height={25} width={25} alt="discord"/>Rector_43</div>
+            <div className="flex gap-2 text-zinc-700">
+              <Mail /> rector.dev@gmail.com
+            </div>
+            <div className="flex gap-2 text-zinc-700">
+              <Image src={Discord} height={25} width={25} alt="discord" />
+              Rector43
+            </div>
           </div>
         </div>
       </section>
