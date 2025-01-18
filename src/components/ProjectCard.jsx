@@ -11,7 +11,7 @@ const ProjectCard = ({
                          detail = "Just something what ever ",
                          cached = true,
                          link = "#",
-                         cach = "#"
+                         cache = "#"
                      }) => {
     return (
         <div className={"border border-border font-roboto w-[350px]"}>
@@ -20,9 +20,9 @@ const ProjectCard = ({
             <div className={"font-semibold text-2xl px-4 py-6"}><h3>{title}</h3></div>
             <div className={"px-4 text-zinc-700"}>{detail}</div>
             <div className={"px-4 py-6 flex gap-4 "}>
-                <Button variant={"outline"}> <Link className={"flex items-center gap-1"} href={link}>Live <Code/>
+                <Button variant={"amber"} > <Link className={"flex items-center gap-1"} href={link}>Live <Code/>
                 </Link> </Button>
-                {cached && <Button variant={"secondary"}><Link href={cach} className={"flex gap-1 items-center"}> Cached <Terminal/></Link></Button>}
+                {cached && <Button variant={"secondary"}><Link href={cache} className={"flex gap-1 items-center"}> Cached <Terminal/></Link></Button>}
             </div>
         </div>
     )
