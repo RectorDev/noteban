@@ -2,13 +2,13 @@
 import "./page.css";
 import { Typewriter } from "react-simple-typewriter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MailOpen, Quote } from "lucide-react";
+import { ArrowRight, Mail, MailOpen, Quote } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import SkillCard from "@/components/SkillCard";
-
+import Discord from '@/../public/discord.svg'
 export default function Home() {
   return (
     <div className="mx-auto my-0 max-w-screen-xl mt-10 padding justify-center flex flex-col ">
@@ -114,16 +114,32 @@ export default function Home() {
               Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online.
               I always strive to learn about the newest technologies and frameworks.
             </p>
-           <div className="text-primary">
-                <Button variant={"amber"}>
-                  Read more
-                  <ArrowRight />
-                </Button>
-           </div>
+            <div className="text-primary">
+              <Button variant={"amber"}>
+                Read more
+                <ArrowRight />
+              </Button>
+            </div>
           </div>
           {/* {picture side} */}
           <div className="w-1/2 flex justify-center">
             <Image className="object-cover aspect-[9/16]" src={"/elie.jpg"} height={350} width={250} alt="Picture of man" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="sm:my-16 my-8">
+        <div className={"font-press text-2xl flex items-center"}>
+          #&#xa0;<h2>Contact</h2>
+          <div className={"h-[1px] ml-1 flex-shrink-0 w-1/4 md:px-44 bg-amber-500"} />
+        </div>
+        {/* {content} */}
+        <div className="flex items-center relative  h-80">
+          <div className="w-1/2">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</div>
+          <div className="absolute bottom-0 right-0 border border-border flex flex-col gap-4 p-2 ">
+            <p>Message me here</p>
+            <div className="flex gap-2 text-zinc-700"><Mail /> rector.dev@gmail.com</div>
+            <div className="flex gap-2 text-zinc-700"><Image src={Discord} height={25} width={25} alt="discord"/>Rector_43</div>
           </div>
         </div>
       </section>
