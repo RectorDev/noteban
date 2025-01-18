@@ -52,7 +52,7 @@ export default function Home() {
         <div>
           <div className={"flex justify-between items-center w-full"}>
             <div className={"font-press text-2xl flex items-center"}>
-              #&#xa0;<h2> projects</h2>
+              <span className="text-amber-500 italic">#</span>&#xa0;<h2> projects</h2>
               <div className={"h-[1px] ml-1 flex-shrink-0 w-1/4 md:px-44 bg-amber-500"} />
             </div>
 
@@ -73,7 +73,7 @@ export default function Home() {
         <div>
           <div className={"flex justify-between items-center w-full"}>
             <div className={"font-press text-2xl flex items-center ital"}>
-              #&#xa0;<h2> Skills</h2>
+              <span className="text-amber-500 italic">#</span>&#xa0;<h2> Skills</h2>
               <div className={"h-[1px] ml-1 flex-shrink-0 w-1/4 md:px-44 bg-amber-500"} />
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Home() {
         {/* {title} */}
         <div className={"flex justify-between items-center w-full"}>
           <div className={"font-press text-2xl flex items-center ital"}>
-            #&#xa0;<h2> About me</h2>
+           <span className="italic text-amber-500"> #</span>&#xa0;<h2> About me</h2>
             <div className={"h-[1px] ml-1 flex-shrink-0 w-1/4 md:px-44 bg-amber-500"} />
           </div>
         </div>
