@@ -29,7 +29,7 @@ export default function ThemeToggle() {
     return (
         <Toggle
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="px-2 py-1 text-sm font-medium bg-gray-200 bg-secondary text-primary rounded"
+            className="px-2 py-1 text-sm font-medium bg-gray-200 bg-secondary text-primary"
         >
             <div>
                 {theme === 'dark' ? <Moon /> : <Sun />}

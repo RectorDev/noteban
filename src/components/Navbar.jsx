@@ -25,7 +25,7 @@ const Navbar = () => {
                     <div className={'w-[1px] h-full bg-primary'}></div>
                 </li>
 
-                <li><Button className={"bg-primary"}><MailOpen/>Contact me
+                <li><Button><MailOpen/>Contact me
                 </Button></li>
             </ul>
         </div>

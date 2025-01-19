@@ -31,7 +31,7 @@ export default function Home() {
           <div className={"relative flex justify-center items-end"}>
             <Image className={"object-contain"} width={350} height={350} src={"/avatar.png"} alt="Brain Rot" />
             <div className={"border-border border w-full flex items-center px-1 pos-center -bottom-9"}>
-              <span className={"h-4 w-4 bg-border inline-block"}></span> &#xa0;Currently working on{" "}
+              <span className={"h-4 w-4 bg-border inline-block"}></span> <span className="text-amber-500">&</span>#xa0;Currently working on{" "}
               <span className={"font-bold text-amber-500"}>
                 &#xa0; <Link href={""}>Nothing</Link>
               </span>
@@ -100,7 +100,7 @@ export default function Home() {
         {/* {title} */}
         <div className={"flex justify-between items-center w-full"}>
           <div className={"font-press text-2xl flex items-center ital"}>
-           <span className="italic text-amber-500"> #</span>&#xa0;<h2> About me</h2>
+            <span className="italic text-amber-500"> #</span>&#xa0;<h2> About me</h2>
             <div className={"h-[1px] ml-1 flex-shrink-0 w-1/4 md:px-44 bg-amber-500"} />
           </div>
         </div>
