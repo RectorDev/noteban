@@ -13,7 +13,7 @@ const page = () => {
             <span className=" text-amber-500"> /</span>&#xa0;<h2> About me</h2>
           </div>
         </div>
-        <p className="font-roboto mt-2">Who am i</p>
+        <p className="font-roboto mt-2">Who am i ?</p>
         {/* content */}
         <div className="flex sm:my-16 my-8 ">
           <div className="font-roboto text-wrap text-zinc-700 w-1/2">

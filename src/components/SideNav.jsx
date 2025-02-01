@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SideNav = () => {
     return (
-        <div className={'fixed right-0 top-40 flex items-center justify-center flex-col gap-3'}>
+        <div className={'fixed right-0 top-40 flex items-center justify-center flex-col gap-3 max-sm:hidden'}>
             <div className={"flex items-center"}>
 
                 <div><Link href={"https://github.com/RectorDev"}> <Github/></Link></div>

@@ -31,7 +31,7 @@ export default function Home() {
           <div className={"relative flex justify-center items-end"}>
             <Image className={"object-contain"} width={350} height={350} src={"/avatar.png"} alt="Brain Rot" />
             <div className={"border-border border w-full flex items-center px-1 pos-center -bottom-9"}>
-              <span className={"h-4 w-4 bg-border inline-block"}></span> <span className="text-amber-500">&</span>#xa0;Currently working on{" "}
+              <span className={"h-4 w-4 bg-border inline-block"}></span> <span className="text-amber-500"></span>&#xa0;Currently working on{" "}
               <span className={"font-bold text-amber-500"}>
                 &#xa0; <Link href={""}>Nothing</Link>
               </span>
@@ -79,13 +79,13 @@ export default function Home() {
           </div>
 
           {/* {skills start} */}
-          <div className="flex gap-4 mt-8 sm:mt-16">
+          <div className="flex max-md:flex-col items-center gap-4 mt-8 sm:mt-16">
             {/* {skill paper} */}
             <div>
               <Image className="object-cover aspect-square" src={"/elie.jpg"} height={375} width={375} alt="Cover" />
             </div>
             {/* {skill cards} */}
-            <div className="flex flex-wrap gap-4 justify-center ">
+            <div className="flex flex-1 flex-wrap gap-4 justify-center ">
               <SkillCard title="Languages" text="JavaScript Python" />
               <SkillCard title="Databases" text="Mongo SQlite" />
               <SkillCard title="Tools" text="VSCode WebStorm Linux Git Notion GPT Shadcn" />
@@ -135,9 +135,9 @@ export default function Home() {
           <div className={"h-[1px] ml-1 flex-shrink-0 w-1/4 md:px-44 bg-amber-500"} />
         </div>
         {/* {content} */}
-        <div className="flex items-center relative  h-80">
-          <div className="w-1/2">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</div>
-          <div className="absolute bottom-0 right-0 border border-border flex flex-col gap-4 p-2 ">
+        <div className="flex items-center relative max-sm:flex-col max-h-60 sm:h-52 ">
+          <div className="flex flex-1">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</div>
+          <div className="absolute max-sm:mt-6 max-sm:static bottom-0 right-0 border border-border flex flex-col gap-4 p-2 flex-1 ">
             <p>Message me here</p>
             <div className="flex gap-2 text-zinc-700">
               <Mail /> rector.dev@gmail.com

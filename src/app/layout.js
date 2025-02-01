@@ -35,7 +35,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body
-            className={` background
+            className={` background transition-colors duration-150
            ${roboto.variable} ${geistSans.variable} ${geistMono.variable} ${pressStart.variable} antialiased`}
 
         >
